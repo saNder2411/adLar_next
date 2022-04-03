@@ -1,5 +1,5 @@
 import cn from 'classnames'
-import React, { DetailedHTMLProps, FC, HTMLAttributes } from 'react'
+import { DetailedHTMLProps, FC, HTMLAttributes } from 'react'
 
 import styles from './Tag.module.css'
 

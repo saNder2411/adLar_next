@@ -1,6 +1,10 @@
-import { Button, HTag, PTag, Tag } from '../components'
+import { useState } from 'react'
+
+import { Button, HTag, PTag, RatingFRef, Tag } from '../components'
 
 function Home() {
+	const [rating, setRating] = useState(4)
+
 	return (
 		<>
 			<HTag tag="h1">Text</HTag>
@@ -31,6 +35,8 @@ function Home() {
 			<Tag size="m" color="primary">
 				S tag
 			</Tag>
+
+			<RatingFRef isEditable rating={rating} setRating={setRating} />
 		</>
 	)
 }
