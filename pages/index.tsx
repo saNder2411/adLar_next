@@ -1,6 +1,7 @@
 import { useState } from 'react'
 
 import { Button, HTag, PTag, RatingFRef, Tag } from '../components'
+import { withLayout } from '../layout'
 
 function Home() {
 	const [rating, setRating] = useState(4)
@@ -35,10 +36,9 @@ function Home() {
 			<Tag size="m" color="primary">
 				S tag
 			</Tag>
-
 			<RatingFRef isEditable rating={rating} setRating={setRating} />
 		</>
 	)
 }
 
-export default Home
+export default withLayout(Home)
